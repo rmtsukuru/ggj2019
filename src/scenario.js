@@ -7,12 +7,12 @@ function LevelScene() {
 LevelScene.prototype = Object.create(Scene.prototype);
 
 LevelScene.prototype.update = function() {
-    Scene.call(this);
+    Scene.prototype.update.call(this);
     // TODO put in input logic
 };
 
 LevelScene.prototype.draw = function() {
-    Scene.call(this);
+    Scene.prototype.draw.call(this);
     drawRect(this.x, this.y, 200, 200, '#0f0');
 };
 
